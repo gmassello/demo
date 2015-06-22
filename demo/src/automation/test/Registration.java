@@ -12,7 +12,7 @@ import automation.actions.ImportProjectActions;
 import automation.helper.StaticProvider;
 import automation.logging.Logging;
 
-public class RegistrationTest {
+public class Registration {
 	
 	WebDriver driver;
 	
