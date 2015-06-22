@@ -121,7 +121,7 @@ public class Helper {
 	 */
 	public static void environmentInfoReport() {
 		Reporter.log("Test was executed in the following environment:");
-		Reporter.log("- URL: " + GetPropertyValues.getPropertyValue("kaceUrl"));
+		Reporter.log("- URL: " + GetPropertyValues.getPropertyValue("url"));
 		Reporter.log("- Execution date: " + Helper.getTodayDate("EEEE' 'dd' de 'MMMM' del 'yyyy' a las 'kk':'mm'hs'"));
 	}
 

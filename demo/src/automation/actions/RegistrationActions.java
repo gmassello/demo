@@ -29,8 +29,8 @@ public class RegistrationActions {
 	public void fieldsValidation(String user, String password, WebDriver driver) {
 		Helper.environmentInfoReport();
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-		Logging.getInstance().getLogger().log(Level.INFO, "Navigate to kaceUrl");
-		loginPage.navigateTo(GetPropertyValues.getPropertyValue("kaceUrl"), driver);
+		Logging.getInstance().getLogger().log(Level.INFO, "Navigate to url");
+		loginPage.navigateTo(GetPropertyValues.getPropertyValue("url"), driver);
 		Logging.getInstance().getLogger().log(Level.INFO, "Complete Login");
 		loginPage.switchToFrame(driver);
 		loginPage.completeLoginTextBox(user);
