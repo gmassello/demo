@@ -12,7 +12,7 @@ import automation.actions.ImportProjectActions;
 import automation.helper.StaticProvider;
 import automation.logging.Logging;
 
-public class ImportAssetsTest {
+public class RegistrationTest {
 	
 	WebDriver driver;
 	
