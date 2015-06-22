@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Execution]">
+  <test name="Test Results(failed)">
+    <classes>
+      <class name="automation.test.ImportAssetsTest">
+        <methods>
+          <include name="importAssets" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- automation.test.ImportAssetsTest -->
+    </classes>
+  </test> <!-- Test Results(failed) -->
+</suite> <!-- Failed suite [Execution] -->

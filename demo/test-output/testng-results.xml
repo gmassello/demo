@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Test was executed in the following environment:]]>
+    </line>
+    <line>
+      <![CDATA[- URL: https://10.24.2.238/admin]]>
+    </line>
+    <line>
+      <![CDATA[- Execution date: miércoles 06 de mayo del 2015 a las 16:29hs]]>
+    </line>
+    <line>
+      <![CDATA[- Go To url: https://10.24.2.238/admin]]>
+    </line>
+    <line>
+      <![CDATA[- Complete login user: admin]]>
+    </line>
+    <line>
+      <![CDATA[- Complete password: FbMs$g8286]]>
+    </line>
+    <line>
+      <![CDATA[- Select login]]>
+    </line>
+    <line>
+      <![CDATA[- Select Assets Link]]>
+    </line>
+    <line>
+      <![CDATA[- Select Import Assets]]>
+    </line>
+    <line>
+      <![CDATA[- Upload csv: C:\workspace\Automation Kace\resources\projects.csv]]>
+    </line>
+    <line>
+      <![CDATA[- Select File Header Row]]>
+    </line>
+    <line>
+      <![CDATA[- Select Next]]>
+    </line>
+    <line>
+      <![CDATA[- Select Assets type]]>
+    </line>
+    <line>
+      <![CDATA[- Select assets type = project]]>
+    </line>
+    <line>
+      <![CDATA[- Select next]]>
+    </line>
+    <line>
+      <![CDATA[- Select Standard fields]]>
+    </line>
+    <line>
+      <![CDATA[- Select Asset Name (Text): Name]]>
+    </line>
+    <line>
+      <![CDATA[- Active checkbox PK]]>
+    </line>
+    <line>
+      <![CDATA[- Select Asset Field First Combo]]>
+    </line>
+    <line>
+      <![CDATA[- Select Asset Field First Combo - Project Manager]]>
+    </line>
+    <line>
+      <![CDATA[- Select Asset Field Second Combo]]>
+    </line>
+    <line>
+      <![CDATA[- Select Asset Field Second Combo - State]]>
+    </line>
+    <line>
+      <![CDATA[- Select Preview]]>
+    </line>
+    <line>
+      <![CDATA[- Select Import Data]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Inserted 0 records.]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Updated 0 records.]]>
+    </line>
+    <line>
+      <![CDATA[Successfully Created 0 Associated Asset records.]]>
+    </line>
+    <line>
+      <![CDATA[Rejected 5322 records.]]>
+    </line>
+    <line>
+      <![CDATA[Error Records : 0]]>
+    </line>
+    <line>
+      <![CDATA[- Select Done]]>
+    </line>
+  </reporter-output>
+  <suite name="Execution" duration-ms="40565" started-at="2015-05-06T19:29:10Z" finished-at="2015-05-06T19:29:50Z">
+    <groups>
+    </groups>
+    <test name="Test Results" duration-ms="40565" started-at="2015-05-06T19:29:10Z" finished-at="2015-05-06T19:29:50Z">
+      <class name="automation.test.ImportAssetsTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:automation.test.ImportAssetsTest@5cdd8682]" name="beforeSuite" is-config="true" duration-ms="6548" started-at="2015-05-06T16:29:03Z" finished-at="2015-05-06T16:29:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="importAssets(java.lang.String, java.lang.String)[pri:0, instance:automation.test.ImportAssetsTest@5cdd8682]" name="importAssets" duration-ms="40552" started-at="2015-05-06T16:29:10Z" data-provider="kaceInformation" finished-at="2015-05-06T16:29:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FbMs$g8286]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test was executed in the following environment:]]>
+            </line>
+            <line>
+              <![CDATA[- URL: https://10.24.2.238/admin]]>
+            </line>
+            <line>
+              <![CDATA[- Execution date: miércoles 06 de mayo del 2015 a las 16:29hs]]>
+            </line>
+            <line>
+              <![CDATA[- Go To url: https://10.24.2.238/admin]]>
+            </line>
+            <line>
+              <![CDATA[- Complete login user: admin]]>
+            </line>
+            <line>
+              <![CDATA[- Complete password: FbMs$g8286]]>
+            </line>
+            <line>
+              <![CDATA[- Select login]]>
+            </line>
+            <line>
+              <![CDATA[- Select Assets Link]]>
+            </line>
+            <line>
+              <![CDATA[- Select Import Assets]]>
+            </line>
+            <line>
+              <![CDATA[- Upload csv: C:\workspace\Automation Kace\resources\projects.csv]]>
+            </line>
+            <line>
+              <![CDATA[- Select File Header Row]]>
+            </line>
+            <line>
+              <![CDATA[- Select Next]]>
+            </line>
+            <line>
+              <![CDATA[- Select Assets type]]>
+            </line>
+            <line>
+              <![CDATA[- Select assets type = project]]>
+            </line>
+            <line>
+              <![CDATA[- Select next]]>
+            </line>
+            <line>
+              <![CDATA[- Select Standard fields]]>
+            </line>
+            <line>
+              <![CDATA[- Select Asset Name (Text): Name]]>
+            </line>
+            <line>
+              <![CDATA[- Active checkbox PK]]>
+            </line>
+            <line>
+              <![CDATA[- Select Asset Field First Combo]]>
+            </line>
+            <line>
+              <![CDATA[- Select Asset Field First Combo - Project Manager]]>
+            </line>
+            <line>
+              <![CDATA[- Select Asset Field Second Combo]]>
+            </line>
+            <line>
+              <![CDATA[- Select Asset Field Second Combo - State]]>
+            </line>
+            <line>
+              <![CDATA[- Select Preview]]>
+            </line>
+            <line>
+              <![CDATA[- Select Import Data]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Inserted 0 records.]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Updated 0 records.]]>
+            </line>
+            <line>
+              <![CDATA[Successfully Created 0 Associated Asset records.]]>
+            </line>
+            <line>
+              <![CDATA[Rejected 5322 records.]]>
+            </line>
+            <line>
+              <![CDATA[Error Records : 0]]>
+            </line>
+            <line>
+              <![CDATA[- Select Done]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- importAssets -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:automation.test.ImportAssetsTest@5cdd8682]" name="afterSuite" is-config="true" duration-ms="374" started-at="2015-05-06T16:29:50Z" finished-at="2015-05-06T16:29:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- automation.test.ImportAssetsTest -->
+    </test> <!-- Test Results -->
+  </suite> <!-- Execution -->
+</testng-results>

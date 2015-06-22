@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Execution" verbose="1">
+	<test name="Test Results">
+		<classes>
+			<class name="automation.test.ImportAssetsTest">
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Test Results</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Results</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 06 16:29:10 ART 2015</td>
+</tr>
+<tr><td>Total time:</td><td>40 seconds (40565 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automation.test.ImportAssetsTest.importAssets()'><b>importAssets</b><br>Test class: automation.test.ImportAssetsTest<br>Parameters: admin, FbMs$g8286<br/>
+<a href="#Output-167013780" onClick='toggleBox("Output-167013780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-167013780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-167013780">
+Test was executed in the following environment:<br/>
+- URL: https://10.24.2.238/admin<br/>
+- Execution date: miércoles 06 de mayo del 2015 a las 16:29hs<br/>
+- Go To url: https://10.24.2.238/admin<br/>
+- Complete login user: admin<br/>
+- Complete password: FbMs$g8286<br/>
+- Select login<br/>
+- Select Assets Link<br/>
+- Select Import Assets<br/>
+- Upload csv: C:\workspace\Automation Kace\resources\projects.csv<br/>
+- Select File Header Row<br/>
+- Select Next<br/>
+- Select Assets type<br/>
+- Select assets type = project<br/>
+- Select next<br/>
+- Select Standard fields<br/>
+- Select Asset Name (Text): Name<br/>
+- Active checkbox PK<br/>
+- Select Asset Field First Combo<br/>
+- Select Asset Field First Combo - Project Manager<br/>
+- Select Asset Field Second Combo<br/>
+- Select Asset Field Second Combo - State<br/>
+- Select Preview<br/>
+- Select Import Data<br/>
+Successfully Inserted 0 records.<br/>
+Successfully Updated 0 records.<br/>
+Successfully Created 0 Associated Asset records.<br/>
+Rejected 5322 records.<br/>
+Error Records : 0<br/>
+- Select Done<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>automation.test.ImportAssetsTest@5cdd8682</td></tr>
+</table><p>
+</body>
+</html>
