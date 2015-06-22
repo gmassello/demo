@@ -8,7 +8,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import automation.actions.ImportProjectActions;
+import automation.actions.RegistrationActions;
 import automation.helper.StaticProvider;
 import automation.logging.Logging;
 
@@ -32,8 +32,8 @@ public class Registration {
 	
 	@Test(dataProvider = "kaceInformation", dataProviderClass = StaticProvider.class)
 	public void importAssets(String user, String password) {
-		ImportProjectActions importProjects = new ImportProjectActions();
-		importProjects.importProject(user, password, driver);
+		RegistrationActions registration = new RegistrationActions();
+		registration.importProject(user, password, driver);
 	}
 
 }

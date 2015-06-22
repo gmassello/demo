@@ -18,7 +18,7 @@ import automation.page.SideNavigationPage;
 import automation.page.assets.AssetsPage;
 import automation.page.assets.ImportAssetsPage;
 
-public class ImportProjectActions {
+public class RegistrationActions {
 	
 	/**
 	 * Importación de Proyectos en Kace
