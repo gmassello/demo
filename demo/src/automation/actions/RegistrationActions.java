@@ -13,7 +13,7 @@ import org.testng.Reporter;
 import automation.helper.GetPropertyValues;
 import automation.helper.Helper;
 import automation.logging.Logging;
-import automation.page.LoginPage;
+import automation.page.HomePage;
 import automation.page.SideNavigationPage;
 import automation.page.assets.AssetsPage;
 import automation.page.assets.ImportAssetsPage;
@@ -28,14 +28,10 @@ public class RegistrationActions {
 	 */
 	public void fieldsValidation(String user, String password, WebDriver driver) {
 		Helper.environmentInfoReport();
-		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		Logging.getInstance().getLogger().log(Level.INFO, "Navigate to url");
-		loginPage.navigateTo(GetPropertyValues.getPropertyValue("url"), driver);
-		Logging.getInstance().getLogger().log(Level.INFO, "Complete Login");
-		loginPage.switchToFrame(driver);
-		loginPage.completeLoginTextBox(user);
-		loginPage.completePasswordTextBox(password);
-		loginPage.selectLogin();
+		homePage.navigateTo(GetPropertyValues.getPropertyValue("url"), driver);
+		homePage.switchToFrame(driver);
 		Helper.waitForJQueryProcessing(60, driver);
 		SideNavigationPage sideNavigationPage = PageFactory.initElements(driver, SideNavigationPage.class);
 		Logging.getInstance().getLogger().log(Level.INFO, "Side Navigation to Import Assests");
