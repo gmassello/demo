@@ -2,7 +2,7 @@
 <suite name="Execution" verbose="1">
 	<test name="Test Results">
 		<classes>
-			<class name="automation.test.ImportAssetsTest">
+			<class name="automation.test.RegistrationTest">
 			</class>
 		</classes>
 	</test>
