@@ -31,9 +31,9 @@ public class Registration {
 	}
 	
 	@Test(dataProvider = "kaceInformation", dataProviderClass = StaticProvider.class)
-	public void importAssets(String user, String password) {
+	public void fieldsValidation(String user, String password) {
 		RegistrationActions registration = new RegistrationActions();
-		registration.importProject(user, password, driver);
+		registration.fieldsValidation(user, password, driver);
 	}
 
 }
