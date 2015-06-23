@@ -30,7 +30,7 @@ public class Registration {
 		Logging.closeHandler();
 	}
 	
-	@Test(dataProvider = "kaceInformation", dataProviderClass = StaticProvider.class)
+	@Test(dataProvider = "demoInformation", dataProviderClass = StaticProvider.class)
 	public void fieldsValidation(String user, String password) {
 		RegistrationActions registration = new RegistrationActions();
 		registration.fieldsValidation(user, password, driver);
