@@ -21,6 +21,7 @@ public class RegistrationActions {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		Logging.getInstance().getLogger().log(Level.INFO, "Navigate to url");
 		homePage.navigateTo(GetPropertyValues.getPropertyValue("url"), driver);
+		homePage.clickRegistrationButton();
 	}
 
 }
