@@ -11,7 +11,7 @@ public class RegistrationTest extends BaseTest {
 	@Test(dataProvider = "demoInformation", dataProviderClass = StaticProvider.class)
 	public void fieldsValidation(String user, String password) {
 		RegistrationActions registration = new RegistrationActions();
-		registration.fieldsValidation(user, password, driver);
+		registration.fieldsValidation(driver);
 	}
 
 }
