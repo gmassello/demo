@@ -9,6 +9,7 @@ import automation.helper.GetPropertyValues;
 import automation.helper.Helper;
 import automation.logging.Logging;
 import automation.page.HomePage;
+import automation.page.RegistrationPage;
 
 public class RegistrationActions {
 	
@@ -21,7 +22,9 @@ public class RegistrationActions {
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		Logging.getInstance().getLogger().log(Level.INFO, "Navigate to url");
 		homePage.navigateTo(GetPropertyValues.getPropertyValue("url"), driver);
-		homePage.clickRegistrationButton();
+		homePage.clickRegistrationButton(driver);
+		RegistrationPage registrationPage = PageFactory.initElements(driver, RegistrationPage.class);
+		registrationPage.clickSubmit(driver);
 	}
 
 }

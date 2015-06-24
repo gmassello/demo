@@ -1,8 +1,11 @@
 package automation.page;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Reporter;
+
+import automation.helper.Helper;
 
 public class HomePage extends BasePage {
 	
@@ -13,8 +16,9 @@ public class HomePage extends BasePage {
 	 * Registration Button Click
 	 * @param value
 	 */
-	public void clickRegistrationButton() {
+	public void clickRegistrationButton(WebDriver driver) {
 		Reporter.log("- Click Registration Button ");
 		registrationButton.click();
+		Helper.waitForJQueryProcessing(30,driver);
 	}
 }
