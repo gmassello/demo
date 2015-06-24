@@ -4,6 +4,7 @@ import java.util.logging.Level;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import automation.helper.GetPropertyValues;
 import automation.helper.Helper;
@@ -25,6 +26,7 @@ public class RegistrationActions {
 		homePage.clickRegistrationButton(driver);
 		RegistrationPage registrationPage = PageFactory.initElements(driver, RegistrationPage.class);
 		registrationPage.clickSubmit(driver);
+		Assert.assertEquals(registrationPage.getNameSetErrorMessage(), "* This field is required");
 	}
 
 }

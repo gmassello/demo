@@ -12,6 +12,9 @@ public class RegistrationPage extends BasePage {
 	@FindBy(xpath = ".//*[@name='pie_submit']")
 	private WebElement submitButton;
 	
+	@FindBy(xpath = ".//*[@id='pie_register']/li[1]/div[1]/div[2]/span")
+	private WebElement nameSetErrorMessage;
+	
 	/**
 	 * Click Submit
 	 */
@@ -19,5 +22,12 @@ public class RegistrationPage extends BasePage {
 		Reporter.log("- Click Submit");
 		submitButton.click();
 		Helper.waitForJQueryProcessing(30,driver);
+	}
+
+	/**
+	 * Get NameSet Error Message
+	 */
+	public String getNameSetErrorMessage() {
+		return nameSetErrorMessage.getText();
 	}
 }
