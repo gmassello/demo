@@ -1,2 +1,2 @@
-[INFO]  2015-06-24 23:06:31  1  Open browser
-[INFO]  2015-06-24 23:07:16  1  Navigate to url
+[INFO]  2015-06-24 23:32:33  1  Open browser
+[INFO]  2015-06-24 23:32:53  1  Navigate to url

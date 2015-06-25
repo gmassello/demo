@@ -13,7 +13,16 @@ public class RegistrationPage extends BasePage {
 	private WebElement submitButton;
 	
 	@FindBy(xpath = ".//*[@id='pie_register']/li[1]/div[1]/div[2]/span")
-	private WebElement nameSetErrorMessage;
+	private WebElement nameErrorMessage;
+	
+	@FindBy(xpath = ".//*[@id='pie_register']/li[3]/div/div[2]/span")
+	private WebElement hobbyErrorMessage;
+	
+	@FindBy(id = "name_3_firstname")
+	private WebElement firstNameTextBox;
+	
+	@FindBy(id = "name_3_lastname")
+	private WebElement lastNameTextBox;
 	
 	/**
 	 * Click Submit
@@ -25,9 +34,36 @@ public class RegistrationPage extends BasePage {
 	}
 
 	/**
-	 * Get NameSet Error Message
+	 * Get First Name Error Message
 	 */
-	public String getNameSetErrorMessage() {
-		return nameSetErrorMessage.getText();
+	public String getNameErrorMessage() {
+		return nameErrorMessage.getText();
+	}
+	
+	/**
+	 * Get Hobby Error Message
+	 */
+	public String getHobbyErrorMessage() {
+		return hobbyErrorMessage.getText();
+	}
+	
+	/**
+	 * Complete first name
+	 * @param firstName
+	 */
+	public void completeFirstName(String firstName) {
+		Reporter.log("- Complete first name");
+		firstNameTextBox.clear();
+		firstNameTextBox.sendKeys(firstName);
+	}
+
+	/**
+	 * Complete last name
+	 * @param lastName
+	 */
+	public void completeLastName(String lastName) {
+		Reporter.log("- Complete last name");
+		lastNameTextBox.clear();
+		lastNameTextBox.sendKeys(lastName);
 	}
 }

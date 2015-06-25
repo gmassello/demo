@@ -14,11 +14,14 @@ import automation.page.RegistrationPage;
 
 public class RegistrationActions {
 	
+	private String validationMessage = "* This field is required";
+	
 	/**
-	 * Registration
+	 * Fields Validation
 	 * @param driver
 	 */
 	public void fieldsValidation(WebDriver driver) {
+		String firstName="FirstName"+Helper.getRandomName(), lastName="LastName"+Helper.getRandomName();
 		Helper.environmentInfoReport();
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		Logging.getInstance().getLogger().log(Level.INFO, "Navigate to url");
@@ -26,7 +29,11 @@ public class RegistrationActions {
 		homePage.clickRegistrationButton(driver);
 		RegistrationPage registrationPage = PageFactory.initElements(driver, RegistrationPage.class);
 		registrationPage.clickSubmit(driver);
-		Assert.assertEquals(registrationPage.getNameSetErrorMessage(), "* This field is required");
+		Assert.assertEquals(registrationPage.getNameErrorMessage(), validationMessage);
+		Assert.assertEquals(registrationPage.getHobbyErrorMessage(), validationMessage);
+		registrationPage.completeFirstName(firstName);
+		registrationPage.completeLastName(lastName);
+
 	}
 
 }
