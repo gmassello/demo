@@ -15,6 +15,7 @@ public class BaseTest {
 	
 	@BeforeSuite
 	public void beforeSuite() {
+		System.setProperty("webdriver.firefox.profile", "automation");
 		Logging.getInstance().getLogger().log(Level.INFO, "Open browser");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();

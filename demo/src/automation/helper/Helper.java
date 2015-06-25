@@ -2,6 +2,7 @@ package automation.helper;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -125,4 +126,12 @@ public class Helper {
 		Reporter.log("- Execution date: " + Helper.getTodayDate("EEEE' 'dd' de 'MMMM' del 'yyyy' a las 'kk':'mm'hs'"));
 	}
 
+	/**
+	 * Get random Name
+	 * @return {@link String}
+	 */
+	public static String getRandomName(){
+		Date date = new Date();
+		return String.valueOf(date.getTime());
+	}
 }
