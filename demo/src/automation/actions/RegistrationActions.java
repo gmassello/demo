@@ -33,7 +33,12 @@ public class RegistrationActions {
 		Assert.assertEquals(registrationPage.getHobbyErrorMessage(), validationMessage);
 		registrationPage.completeFirstName(firstName);
 		registrationPage.completeLastName(lastName);
-
+		registrationPage.selectDance();
+		registrationPage.selectReading();
+		registrationPage.selectCricket();
+		registrationPage.selectSingle();
+		registrationPage.selectMarried();
+		registrationPage.selectDivorced();
 	}
 
 }
