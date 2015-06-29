@@ -39,6 +39,10 @@ public class RegistrationActions {
 		registrationPage.selectSingle();
 		registrationPage.selectMarried();
 		registrationPage.selectDivorced();
+		registrationPage.selectCountry("Argentina");
+		registrationPage.selectYear();
+		registrationPage.selectDay();
+		registrationPage.selectMonth();
 	}
 
 }

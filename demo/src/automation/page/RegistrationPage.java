@@ -3,6 +3,7 @@ package automation.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 
 import automation.helper.Helper;
@@ -43,6 +44,17 @@ public class RegistrationPage extends BasePage {
 	@FindBy(xpath = ".//*[@name='radio_4[]' and @value='divorced']")
 	private WebElement divorcedOptionButton;
 	
+	@FindBy(id = "dropdown_7")
+	private WebElement countryComboBox;
+
+	@FindBy(id = "yy_date_8")
+	private WebElement yearComboBox;
+
+	@FindBy(id = "dd_date_8")
+	private WebElement dayComboBox;
+
+	@FindBy(id = "mm_date_8")
+	private WebElement monthComboBox;
 	
 	/**
 	 * Click Submit
@@ -134,4 +146,38 @@ public class RegistrationPage extends BasePage {
 		Reporter.log("- Select divorced");
 		if (!divorcedOptionButton.isSelected()) divorcedOptionButton.click();  
 	}
+
+	/**
+	 * Select a Country
+	 * @param countryName
+	 */
+	public void selectCountry(String countryName) {
+		Reporter.log("- Select the country: "+countryName);
+		new Select(this.countryComboBox).selectByVisibleText(countryName);	
+	}
+	
+	/**
+	 * Select current year
+	 */
+	public void selectYear() {
+		Reporter.log("- Select current year");
+		new Select(this.yearComboBox).selectByVisibleText("2014");
+	}
+	
+	/**
+	 * Select current day
+	 */
+	public void selectDay() {
+		Reporter.log("- Select current day");
+		new Select(this.dayComboBox).selectByVisibleText(Helper.getTodayDate("dd"));
+	}
+	
+	/**
+	 * Select current month
+	 */
+	public void selectMonth() {
+		Reporter.log("- Select current month");
+		new Select(this.monthComboBox).selectByVisibleText("1");
+	}
+	
 }
