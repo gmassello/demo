@@ -56,6 +56,9 @@ public class RegistrationPage extends BasePage {
 	@FindBy(id = "mm_date_8")
 	private WebElement monthComboBox;
 	
+	@FindBy(id = "phone_9")
+	private WebElement phoneNumberTextBox;	
+	
 	/**
 	 * Click Submit
 	 */
@@ -161,7 +164,7 @@ public class RegistrationPage extends BasePage {
 	 */
 	public void selectYear() {
 		Reporter.log("- Select current year");
-		new Select(this.yearComboBox).selectByVisibleText("2014");
+		new Select(this.yearComboBox).selectByVisibleText(Integer.toString(Integer.parseInt(Helper.getTodayDate("yyyy"))-1));
 	}
 	
 	/**
@@ -177,7 +180,16 @@ public class RegistrationPage extends BasePage {
 	 */
 	public void selectMonth() {
 		Reporter.log("- Select current month");
-		new Select(this.monthComboBox).selectByVisibleText("1");
+		new Select(this.monthComboBox).selectByVisibleText(Integer.toString(Integer.parseInt(Helper.getTodayDate("MM"))));
 	}
 	
+	/**
+	 * Complete Phone Number
+	 * @param phoneNumber
+	 */
+	public void completePhoneNumber(String phoneNumber) {
+		Reporter.log("- Complete Phone Number");
+		phoneNumberTextBox.clear();
+		phoneNumberTextBox.sendKeys(phoneNumber);
+	}
 }

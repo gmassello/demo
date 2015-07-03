@@ -18,7 +18,7 @@ public class RegistrationActions {
 	 * @param driver
 	 */
 	public void fieldsValidation(WebDriver driver) {
-		String firstName="FirstName"+Helper.getRandomName(), lastName="LastName"+Helper.getRandomName();
+		String firstName="FirstName"+Helper.getRandomName(), lastName="LastName"+Helper.getRandomName(), phoneNumber="Phone Number"+Helper.getRandomName();
 		Helper.environmentInfoReport();
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.navigateTo(GetPropertyValues.getPropertyValue("url"), driver);
@@ -39,6 +39,7 @@ public class RegistrationActions {
 		registrationPage.selectYear();
 		registrationPage.selectDay();
 		registrationPage.selectMonth();
+		registrationPage.completePhoneNumber(phoneNumber);
 	}
 
 }
