@@ -169,7 +169,7 @@ public class RegistrationPage extends BasePage {
 	 */
 	public void selectDay() {
 		Reporter.log("- Select current day");
-		new Select(this.dayComboBox).selectByVisibleText(Helper.getTodayDate("dd"));
+		new Select(this.dayComboBox).selectByVisibleText(Integer.toString(Integer.parseInt(Helper.getTodayDate("dd"))));
 	}
 	
 	/**
